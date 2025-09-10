@@ -13,13 +13,16 @@ pipeline {
 
   options {
     timestamps()
-    ansiColor('xterm')
+    //ansiColor('xterm')
   }
 
   stages {
     stage('Checkout') {
+      
       steps {
-        checkout scm
+        ansiColor('xterm'){
+           checkout scm
+        }
       }
     }
 
