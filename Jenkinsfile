@@ -2,12 +2,12 @@ pipeline {
   agent any
 
   environment {
-    PROJECT_ID   = credentials('gcp-project-id')  // opcional si lo guardas como secret text
+    //PROJECT_ID   = credentials('gcp-project-id')  // opcional si lo guardas como secret text
     REGION       = 'southamerica-west1'
     REPO_NAME    = 'apps'
     SERVICE_NAME = 'fastapi-demo'
-    # Si no usas cred 'gcp-project-id', escribe el ID literal:
-    // PROJECT_ID = 'TU_PROYECTO'
+    // Si no usas cred 'gcp-project-id', escribe el ID literal:
+    PROJECT_ID = 'devops-dcrm'
     REGISTRY_HOST = "${REGION}-docker.pkg.dev"
   }
 
