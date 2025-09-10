@@ -3,7 +3,7 @@ pipeline {
 
   environment {
     //PROJECT_ID   = credentials('gcp-project-id')  // opcional si lo guardas como secret text
-    REGION       = 'southamerica-west1'
+    REGION       = 'us-central1-c'
     REPO_NAME    = 'apps'
     SERVICE_NAME = 'fastapi-demo'
     // Si no usas cred 'gcp-project-id', escribe el ID literal:
